@@ -105,11 +105,25 @@ p, h2 {
     opacity: 0; /* Initially hidden */
     transition: opacity 0.5s; /* Smooth opacity transition */
 }
+.front{
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+            color: white; /* Text color */
+            text-align: center; /* Center-align text */
+            padding: 30px; 
+            /* Add padding for better visibility */
+            
+            
+}
+.welcome{
+    font-size: 40px;
+}
 /* Information */
 .info{
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 .story__para  {
     
@@ -120,9 +134,18 @@ p, h2 {
     margin: 0 auto; /* Optional: Center the element itself horizontally */
     border: 0px solid #ccc; /* Optional: Add a border for visibility */
 }
+.story{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 
 .youtube{
     margin: 20px;
     display: flex;
     justify-content:center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
 }
