@@ -10,6 +10,13 @@
     font-family: Roboto;
     scroll-behavior: smooth;
 }
+/* Underline */
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
 
 body{
     background-color: #121212;
@@ -74,23 +81,17 @@ body{
 /* SIZING AND POSITION FOR TEXT */
 
 h2{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    
-}
-
-p{
-    margin-top: 10px;
-    font-size: 20px;
-    margin-left: 50px;
-}
-
-/* Color for text */
-p, h2 {
+    font-size: 36px;
     color: white;
 }
-/* Your existing CSS */
+
+/* verse */
+.front{
+    text-align: center;
+    color: #ccc;
+}
+
+
 .image-section {
     position: relative;
 }
@@ -101,47 +102,56 @@ p, h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+
     opacity: 0; /* Initially hidden */
     transition: opacity 0.5s; /* Smooth opacity transition */
 }
-.front{
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+.welcome{
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
             color: white; /* Text color */
-            text-align: center; /* Center-align text */
+             /* Center-align text */
             padding: 30px; 
             /* Add padding for better visibility */
             
             
 }
+
 .welcome{
-    font-size: 40px;
+    font-size: 55px;
 }
+.welcome__font{
+    font-size: 24px ;
+}
+
 /* Information */
 .info{
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    padding-right: 100px;
-    padding-left: 100px;
+    /* padding-right: 100px;
+    padding-left: 100px; */
 }
-.story__para  {
+
+.story__color{
     
-    
+    color: #ccc;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto; /* Optional: Center the element itself horizontally */
-    border: 0px solid #ccc; /* Optional: Add a border for visibility */
+    border: 0px solid #ccc;
+    font-size: 20px; /* Optional: Add a border for visibility */
 }
-.story{
+.layout{
+    background-color: #1e1d1c;
     display: flex;
     align-items: center;
-    text-align: center;
+    line-height: 2;
+    padding-left: 5px;
 }
 
+
 .youtube{
-    margin: 20px;
     display: flex;
     justify-content:center;
 }
@@ -149,3 +159,53 @@ p, h2 {
     display: flex;
     flex-direction: column;
 }
+
+/* location */
+.layout__map{
+    background-color: #1d1e1c;
+    display: flex;
+    line-height: 2;
+    
+}
+.maps{
+    display: flex;
+    justify-content: center;
+    
+}
+.maps__title{
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* meeting times */
+
+  .meeting__body{
+    display: flex;
+    text-align: center;
+  }
+.meeting__body p{
+    font-size: 15px;
+margin-bottom: 5px;
+color: #ccc;
+}
+.meeting__body h4{
+    font-size: 1.6em;
+    line-height: 1.2em;
+    color: #ccc;
+}
+
+
+  .schedule-table {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed: space-between, center, etc. */
+    flex-wrap: wrap; /* Wrap to the next line if the content overflows */
+  }
+  
+  .sunday__worship,
+  .prayer__meetings,
+  .life__groups {
+    width: 30%; /* Adjust the width of each section */
+    padding: 10px;
+     /* Optional: Add borders for a table-like appearance */
+    margin: 10px; /* Optional: Add spacing between sections */
+  }
