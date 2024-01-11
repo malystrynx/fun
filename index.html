@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./Pictures/G+logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GCC Sydney</title>
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/1256adce66.js" crossorigin="anonymous"></script>
-
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 </head>
 <body>
     <section class="navigation">
@@ -16,7 +17,7 @@
     <div class="nav__bar">
         <div class="nav">
             
-            <div class="logo">
+            <div class="logo scrolling">
                 <img class="logo__img" src="./Pictures/gccwhite.svg" alt="">
             
             
@@ -27,9 +28,14 @@
                 <li class="right__nav--list"><a class="nav__link" href="#">About</a></li>
                 <li class="right__nav--list"><a class="nav__link" href="#">Leadership</a></li>
                 <li class="right__nav--list"><a class="nav__link" href="#">We Believe</a></li>
-                <li class="right__nav--list"><a class="nav__link" href="#">Socials</a></li>
+                <li class="right__nav--list"><a target="_blank" href="https://www.instagram.com/gccsydney/"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a></li>
+                <li class="right__nav--list"><a target="_blank" href="https://www.youtube.com/gccsydney"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i></a></li>
+                <li class="right__nav--list"><a target="_blank" href="https://www.facebook.com/gccsydneyau/"><i class="fa-brands fa-facebook-f fa-lg" style="color: #ffffff;"></i></a></li>
+                <li class="right__nav--list"><a href="#"><i class="fa-regular fa-envelope fa-lg" style="color: #ffffff;"></i></a></li>
                 <!-- MAKE INTERACTIVE, MAKE A BORDER AROUND IT   -->
-                <li class="right__nav--list"><i class="fa-solid fa-circle-dollar-to-slot fa-lg" style="color: #ffffff;"></i></li>
+                <!-- <li class="right__nav--list nav__border">
+                    <i class="fa-solid fa-building-columns fa-lg" style="color: #ffffff;"></i><a href="#" class="nav__link"> Give</a>
+                </li> -->
             </ul>
         </nav> 
         </div>
@@ -38,10 +44,10 @@
         
     </div>
     <section class="image-section">
-        <img class="image" src="./Pictures/church.jpg" alt="">
+        <img class="image" src="./Pictures/harbour.jpeg"">
         <div class="text-overlay welcome">
-            <span class="welcome__font">WELCOME TO </span>
-            <h1 class=>Grace Community Chapel Sydney </h1>
+            <span class="welcome__font sydney">WELCOME TO </span>
+            <h1 class=>Grace Community Chapel <span class="sydney">Sydney</span> </h1>
             <!-- <p class="front">Commit your way to the LORD; trust in Him, and He will act. - Psalms 37:5</p> -->
         </div>
     </section>
@@ -55,7 +61,7 @@
     <section class="layout">
 
         <div>
-            <h2> Our Story </h2>
+            <h2 class="story__title"> Our Story </h2>
             <p class="story__color">Grace Community Chapel Sydney was born from years of prayer, recognizing the need for more disciple-making churches with a focus on the gospel, Spirit-filled worship, and theological soundness.</p>
         </div>
         <div class="youtube">
@@ -78,7 +84,7 @@
                 <h2 class="front">Location and Meeting Times</h2>
                 <div class="meeting__body">
                     <div class="schedule-table">
-                    <div class="sunday__worship">
+                    <div class="sunday__worship border__sunday column">
                         <h4>Sunday Worship</h4>
                         <p>Sundays - 11am </p>
                         <p> Pickup from Parramatta Station </p>
@@ -86,14 +92,14 @@
                         <p> 27 Iron St, North Parramatta NSW 2151</p>
                         
                     </div>
-                    <div class="prayer__meetings">
+                    <div class="prayer__meetings border__meetings column">
                         <h4>Prayer Meetings</h4>
                         <p>EMP (Tuesday-Saturday) - 7am</p>
                         <p>TNP (Tuesdays) - 7:30pm</p>
                         <p> 27 Iron St, North Parramatta NSW 2151</p>
                         
                     </div>
-                   <div class="life__groups"> <h4>Life Groups</h4>
+                   <div class="life__groups border__lg column"> <h4>Life Groups</h4>
                     <p>Various Times and Locations</p></div>
                     
                 </div>
@@ -103,9 +109,24 @@
         
     </section>
 
-    <section class="meeting">
+    <section class="leadership">
+        <div class="layout__leadership">
 
-    </section>
+            <div class="leadership__text">
+                <h2 class="leadership__h2">Leadership</h2>
+                <p class="story__color">
+                    Pastor Paul Nam, founder and Lead Pastor of Grace Community Chapel Sydney, is a graduate of The George Washington University (B.A.) and The Southwestern Baptist Theological Seminary (M.Div). Currently pursuing a Doctorate of Ministry in Discipleship from Talbot School of Theology, he also holds a Foundations of Biblical Counseling Certificate from Christian Counseling & Educational Foundation (CCEF) and is ordained in the Christian Reformed Church of North America (CRCNA).
+                    
+                    His passion lies in raising bold, committed, and passionate disciples of Jesus Christ for a significant impact in the Kingdom of God. Pastor Paul desires people to cultivate a deep, love relationship with Jesus. A devoted husband to Deborah and a grateful father to Karis, Kayla, Moses, and Matthew.
+                    <div class="elfsight-app-ac87372f-79e8-4da0-aea9-5d5078b485c8" data-elfsight-app-lazy></div>
+                    
+                    
+                    
+                    
+                    </p>
+            </div>
+        </div>
+        </section>
 </section>
 </body>
 </html>                  

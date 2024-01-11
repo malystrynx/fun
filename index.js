@@ -3,10 +3,10 @@ const image = document.querySelector('.image');
 window.addEventListener('scroll', () => {
     // Calculate blur based on scroll position
     const scrollPosition = window.scrollY;
-    const blurAmount = (scrollPosition / 100); // Adjust as needed
+    const blurAmount = (scrollPosition / 80); // Adjust as needed
 
     // Apply the blur effect with smoother transition
-    image.style.filter = `blur(${blurAmount}px)`;
+    image.style.filter = `blur(${2}px)`;
 });
 
 const textOverlay = document.querySelector('.text-overlay');

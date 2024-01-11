@@ -10,16 +10,26 @@
     font-family: Roboto;
     scroll-behavior: smooth;
 }
-/* Underline */
+/* text edits  */
   
   a:hover {
     text-decoration: underline;
   }
   
+  .nav__border {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: ; /* Set the color of the circular border */
+    padding: 10px; /* Adjust the padding as needed */
+  }
+
+  
 
 
 body{
-    background-color: #121212;
+    background-color: #6CA589;
 }
 .logo__img{
     width: 180px;
@@ -30,14 +40,13 @@ body{
 .nav{
     display: flex;
     justify-content: space-between;
-    padding-top: 15px;
     color: black;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    padding: 60px;
+    padding: 40px;
 
 }
 
@@ -68,6 +77,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: sticky;
 }
 .nav__link{
     text-decoration: none;
@@ -76,6 +86,10 @@ body{
 
 .nav__bar{
     width: 100%;
+}
+
+.sydney{
+    color: #5978A9 ;
 }
 
 /* SIZING AND POSITION FOR TEXT */
@@ -88,7 +102,7 @@ h2{
 /* verse */
 .front{
     text-align: center;
-    color: #ccc;
+    color: black;
 }
 
 
@@ -106,21 +120,13 @@ h2{
     opacity: 0; /* Initially hidden */
     transition: opacity 0.5s; /* Smooth opacity transition */
 }
-.welcome{
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
-            color: white; /* Text color */
-             /* Center-align text */
-            padding: 30px; 
-            /* Add padding for better visibility */
-            
-            
-}
+
 
 .welcome{
-    font-size: 55px;
+    font-size: 68px;
 }
 .welcome__font{
-    font-size: 24px ;
+    font-size: 22px ;
 }
 
 /* Information */
@@ -131,10 +137,12 @@ h2{
     /* padding-right: 100px;
     padding-left: 100px; */
 }
-
+.story__title{
+    color:#000  ;
+}
 .story__color{
-    
-    color: #ccc;
+    background-color: #fffefc;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,11 +151,11 @@ h2{
     font-size: 20px; /* Optional: Add a border for visibility */
 }
 .layout{
-    background-color: #1e1d1c;
     display: flex;
     align-items: center;
     line-height: 2;
     padding-left: 5px;
+    background-color: #fffefc;
 }
 
 
@@ -162,7 +170,7 @@ h2{
 
 /* location */
 .layout__map{
-    background-color: #1d1e1c;
+    background-color: #fffefc;
     display: flex;
     line-height: 2;
     
@@ -177,28 +185,33 @@ h2{
     text-align: center;
 }
 
+.layout__map{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
 /* meeting times */
 
   .meeting__body{
-    display: flex;
+    
     text-align: center;
   }
 .meeting__body p{
     font-size: 15px;
 margin-bottom: 5px;
-color: #ccc;
+color: black;
 }
 .meeting__body h4{
     font-size: 1.6em;
     line-height: 1.2em;
-    color: #ccc;
+    color: black;
 }
 
-
+ 
   .schedule-table {
     display: flex;
-    justify-content: space-around; /* Adjust as needed: space-between, center, etc. */
-    flex-wrap: wrap; /* Wrap to the next line if the content overflows */
+    justify-content: space-around;
   }
   
   .sunday__worship,
@@ -209,3 +222,42 @@ color: #ccc;
      /* Optional: Add borders for a table-like appearance */
     margin: 10px; /* Optional: Add spacing between sections */
   }
+
+/* leadership */
+.layout__leadership{
+    background-color: #fffefc;
+    display: flex;
+    align-items: center;
+    line-height: 2;
+    padding-left: 5px;
+}
+
+.leadership__h2{
+    color: black;
+}
+
+/* BORDERS FOR LOCATION AND TIME  */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(100vw / 3);
+    border: 1px solid lightgrey;
+    margin: 0 16px;
+}
+
+.border__sunday {
+    border-top: 8px solid #6ca589;
+    border-radius: 8px;
+}
+.border__meetings {
+    border-top: 8px solid #896ca5;
+    border-radius: 8px;
+}
+.border__lg {
+    border-top: 8px solid #a5896c;
+    border-radius: 8px;
+}
